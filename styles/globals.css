@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0f172a] text-[#ffeded];
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  li {
+    cursor: pointer;
+  }
+  button {
+    @apply shadow-xl rounded-xl uppercase bg-gradient-to-r from-[#ff1722] to-[#fd2da2] text-white;
+  }
+}
